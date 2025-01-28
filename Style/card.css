@@ -1,0 +1,140 @@
+.card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+   
+}
+.card__conteudo{
+    background-color: var(--branco-principal);
+    padding: 15px;
+    width: 80%;
+    box-shadow: 0 2px 5px 0 rgb(0, 0, 0, 0.3) ;
+    border-radius: 5px;
+}
+
+.conteudo__container{
+    display: flex;
+    padding: 0 4px;
+    justify-content: space-between;
+}
+
+.conteudo__descricao{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 18px 0 0;
+}
+
+.conteudo__botoes{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.botoes__lista{
+    display: flex;
+    align-items: center;
+}
+
+.botao__saiba__mais{
+    text-decoration: none;
+    background-color: var(--laranja);
+    color: var(--branco-principal);
+    padding: 10px 30px;
+    font-weight: 700;
+}
+
+.escritora{
+    padding: 10px 35px;
+}
+
+.slides__imagem{
+    width: 160px;
+    margin: 15px 0;
+}
+
+.descricao__informacao{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.descricao__titulo{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.descricao__texto{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.descricao__lista{
+    display: flex;
+    gap: 6px;
+}
+
+@media screen and (min-width:1024px) {
+    .swiper {
+        width: 700px;
+        height: 270px;
+      }
+
+    .card__conteudo{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1728px) {
+    .card{
+        display: flex;
+        flex-direction: row;
+        margin: 100px 60px;
+    }
+
+    .card__conteudo{
+        width: 40%;
+        padding: 0;
+    }
+    .descricao__informacao{
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .descricao__titulo{
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .swiper {
+        width: 800px;
+        height: 360px;
+      }
+
+    .slides__imagem{
+        width: 220px;
+
+    }
+
+    .conteudo__container, .conteudo__botoes{
+        padding:  20px 20px;
+    }
+
+    .conteudo__botoes{
+        margin-top: 0px;
+    }
+    
+    .botao__saiba__mais{
+        padding: 30px 30px;
+    }
+
+   
+
+    .conteudo__descricao{
+        gap: 30px;
+    }
+}

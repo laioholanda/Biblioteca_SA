@@ -1,0 +1,24 @@
+@import url(Style/cabecalho.css);
+@import url(Style/banner.css);
+@import url(Style/rotulo.css);
+@import url(Style/swiper.css);
+@import url(Style/card.css);
+@import url(Style/fiquePorDentro.css);
+@import url(Style/footer.css);
+
+
+:root{
+    --cor-de-fundo:#EBECEE;
+    --fonte-principal: "Poppins", serif;
+    --branco-principal:#FFFFFF;
+    --laranja:#EB9B00;
+    --degrade:linear-gradient(17deg, rgba(20,15,82,1) 0%, rgba(45,47,56,1) 51%, rgba(108,22,207,1) 100%);
+    --preto:#000000;
+    --fonte-secundaria:"Josefin Sans", serif;;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+}

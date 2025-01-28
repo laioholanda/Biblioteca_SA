@@ -1,0 +1,159 @@
+
+.primeiro__banner{
+    background: var(--degrade);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--branco-principal);
+    align-items: center;
+    padding: 6rem 3rem 4rem 3rem;
+}
+
+.primeiro__banner__titulo{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.primeiro__banner__texto{
+    line-height: 25px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.primeiro__banner__pesquisa{
+    text-align: center;
+    border-radius: 24px;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    color: var(--branco-principal);
+    width: 100%;
+    
+}
+
+.primeiro__banner__pesquisa::placeholder{
+    color: var(--branco-principal);
+    background: url("../img/lupa__pesquisa.svg");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 30px;
+}
+
+/* ........... SEGUNDO BANNER - VISITAS RECENTES ......*/
+.visitados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--degrade) ;
+    height: 100%;
+    /* padding: 40px 15px 0 15px;
+    gap: 60px; */
+    justify-content: center; 
+    padding: 2rem 1rem; 
+    gap: 1.6rem;
+}
+
+.visitados__titulo{
+    color: var(--branco-principal);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.visitados__lista{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    gap: 0.5rem;
+}
+
+.visitados__list__itens{
+    margin: 10px 5px 40px 5px;
+}
+.listi__item__link{
+    color: var(--branco-principal);
+    text-decoration: none;
+    background-color: var(--laranja);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 20px;
+
+}
+
+
+/* ................ TELAS DE 1024 PX ..............*/
+@media screen and (min-width:1024px) {
+
+    .primeiro__banner{
+        padding: 6rem 3rem 4rem 3rem;
+    }
+
+    .primeiro__banner__pesquisa{
+        width:45%;  
+        padding: 15PX;    
+    }
+
+    .primeiro__banner__titulo{
+        font-size: 36px;
+    }
+/* Segundo banner - visitado */
+    .visitados__titulo{
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+    .visitados__lista{
+        padding: 0 8.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .listi__item__link{
+        font-size: 24px;
+    }
+
+    
+}
+
+/* segundo banner - visitantes */
+
+
+
+/* ................................................. */
+
+/* ................... TELAS DE 1720 PX .............*/
+@media screen and (min-width:1720px) {
+  
+    .primeiro__banner{
+        padding: 8rem 3rem 4rem 3rem;
+    }
+    .primeiro__banner__pesquisa{
+        padding: 20px;
+        width: 35%;
+        border-radius: 30px;
+    }
+
+    .primeiro__banner__texto{
+        margin-bottom: 1rem;
+    }
+
+   /* Segundo banner - visitado */
+   .visitados__titulo{
+    font-size: 32px;
+    margin: 2.5rem 0;
+}
+    .visitados__lista{
+        padding: 0 25rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .visitados__list__itens{
+        margin-bottom: 60px;
+    }
+
+    .listi__item__link{
+        font-size: 24px;
+        padding: 20px 40px;
+    }
+}

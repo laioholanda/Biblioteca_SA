@@ -1,0 +1,227 @@
+/* ....................... TELAS DE 428 PX .................*/
+.cabecalho{
+    background-color: var(--branco-principal);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    
+}
+
+.menu__botao:checked ~ .cabecalho__itens__rotulo > .menu{
+    background-image: url("../img/Menu\ Aberto.svg");
+}
+
+.menu__botao:checked ~ .cabecalho__itens__rotulo{
+    background: var(--degrade);
+}
+
+.cabecalho__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__itens{
+    display: flex;
+    align-items: center;   
+}
+
+
+/* Imagem do menu  */
+.menu{
+    background: url("../img/icon_menu.svg");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 40px;
+    background-position: center;
+    display: inline-block;
+}
+
+.container__img{
+    width: 40px;
+}
+
+
+.itens__link{
+    margin-left: 14px;
+}
+
+
+/* .........Menu suspenso............ */
+.menu__lista{
+    position: absolute;
+    top: 100%;
+    background-color: var(--branco-principal);
+    width: 70%;
+    display: none;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu__lista__itens{
+    padding: 15px;
+}
+
+.menu__link{
+    background: var(--degrade);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+.menu__botao{
+    display: none;
+}
+
+.menu__botao:checked~.menu__lista{
+    display: block;
+}
+
+.categoria{
+    font-weight: 700;
+    color: var(--laranja);
+}
+
+.menu__lista__itens:hover{
+    background-color: rgb(67, 29, 158);
+}
+
+.menu__link:hover{
+    background: var(--branco-principal);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* ............................... */
+
+/* itens que não irão aparecer para Smartphone  */
+.itens__titulo,
+.opcoes,
+.opcoes__menu__suspenso,
+.lista__decricao{
+    display: none;
+}
+
+/* ............................................... */
+
+
+/* ..................... TELAS DE 1024 PX ................ */
+@media screen and (min-width: 1024px) {
+    
+    .cabecalho__container{
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .menu,
+    .favoritos{
+        display: none;
+    }
+    .itens__titulo{
+        display: block;
+        margin: 15px;
+        font-size: 30px;
+        font-family: var( --fonte-secundaria);
+    }
+    .titlulo__link{
+        text-decoration: none;
+        background: var(--degrade);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 400;
+    }
+
+    .opcoes__menu:checked ~ .opcoes__rotulo > .opcoes__itens{
+        background: var(--degrade);
+        color: var(--branco-principal);
+    }
+
+    .titulo__negrito{
+        font-weight: 700;
+    }
+
+    /* Menu Suspenso */
+    .opcoes{
+        display: flex;
+        align-items: center;  
+    }
+
+    .opcoes__itens{
+        padding: 15px;
+        font-weight: 400;
+        color: var(--preto);
+    }
+
+    .opcoes__menu__suspenso{
+        position: absolute;
+        top: 100%;
+        background-color: var(--branco-principal);
+        width: 20%;
+    }
+
+    .opcoes__menu:checked~.opcoes__menu__suspenso{
+        display: block;
+    }
+    
+    .suspenso__itens{
+        padding: 15px;
+    }
+
+    .suspenso__itens__link{
+        background: var(--degrade);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 400;
+    }
+
+    .opcoes__menu{
+        display: none;
+    }
+
+    .suspenso__itens:hover{
+        background-color: rgb(67, 29, 158);
+    }
+
+    .suspenso__itens__link:hover{
+        background: var(--branco-principal);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    /* ................................................................ */
+    
+}
+
+/*  ................ TELAS DE 1728 PX .......................*/
+@media screen and (min-width:1728px){
+    .lita__itens{
+        display: flex;
+        align-items: center;
+        padding: 12px;
+    }
+
+    .opcoes{
+        margin-right: auto;
+    }
+    .opcoes__itens{
+        display: block;
+    }
+
+    .lista__decricao{
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--preto);
+
+    }
+
+    .opcoes__menu__suspenso{
+        width: 10%;
+    }
+/* ...................................................................... */
+
+}
